@@ -2,10 +2,11 @@
 setlocal EnableExtensions
 title Windscribe Bypass - WindFixer
 color 0B
-set "VERSION=1.1.0"
+set "VERSION=1.1.1"
 
 REM ============================================================
 REM  WindFixer.bat  v%VERSION%
+REM  by WAI490 - https://github.com/WAI490/WindFixer
 REM
 REM  Deletes the 2 leftover Windscribe registry keys shown in
 REM  the video (Arka Labs - Windscribe free VPN trick):
@@ -32,6 +33,7 @@ if %errorlevel% neq 0 (
 
 echo ============================================================
 echo   Windscribe Bypass - WindFixer  v%VERSION%
+powershell -NoProfile -Command "Write-Host '  by WAI490 - https://github.com/WAI490/WindFixer' -ForegroundColor Yellow"
 echo ============================================================
 echo.
 echo   BEFORE YOU CONTINUE:

@@ -1,6 +1,6 @@
 # WindFixer
 
-**Version 1.1.0** · [README in Persian (فارسی)](README-fa.md)
+**Version 1.1.1** · [README in Persian (فارسی)](README-fa.md)
 
 A small Windows batch script that removes two leftover Windscribe registry
 keys so the app treats the machine as a fresh install.
@@ -22,6 +22,15 @@ Deletes these two keys under the **current user** hive (`HKCU`):
 It also force-closes the Windscribe processes before deleting the keys, and
 verifies that Windscribe actually closed — if the app is still running, the
 script aborts and deletes nothing.
+
+## When do you need WindFixer?
+
+Sometimes Windscribe gets stuck on a machine: it refuses to sign in or
+keeps treating the PC as already registered, because two leftover keys
+stay in the registry (`NetControlPort` and `Windscribe2` under HKCU).
+When that happens, log out of Windscribe, run `WindFixer.bat`, confirm
+with **Y**, and the script removes both keys (verifying each one) so
+the client starts from a clean state again.
 
 ## Requirements
 

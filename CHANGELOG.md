@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.1.1 — 2026-11-15
+
+- Documentation only — no change to the script's behaviour.
+- Added the repository About description on GitHub.
+- README (English and Persian): new "When do you need WindFixer?"
+  section explaining the stuck sign-in / already-registered case the
+  tool is for.
+- `WindFixer.bat`: author credit line (by WAI490, with the repository
+  link) added to the header comments and shown in yellow in the
+  on-screen startup banner.
+
 ## 1.1.0 — 2026-11-14
 
 - Added a real Y/N confirmation before anything is changed (previously
